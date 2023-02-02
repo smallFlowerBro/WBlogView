@@ -1,0 +1,90 @@
+@import './base.css';
+
+#app {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr ;
+    padding: 0 2rem;
+  }
+}
+
+.copy{
+  width: 30px;
+  height: 30px;
+  display: none;
+  background-color: gray;
+  position: absolute;
+  box-shadow: 0 2 0 rgb(0, 0, 0,.5);
+  border-radius: 5px;
+  top : 5px;
+  right: 5px;
+  text-align:center;
+  cursor: pointer;
+}
+body{
+  background-image: url(../static/img/background.jpg);
+  background-size: 100% 100%;
+  background-repeat:  no-repeat;
+}
+.w-10{
+  width: 10%;
+}
+
+.w-20{
+  width: 20%;
+}
+
+.w-30{
+  width: 20%;
+}
+
+.w-40{
+  width: 20%;
+}
+.w-50{
+  width: 50%;
+}
+
+.w-60{
+  width: 60%;
+}
+
+.w-70{
+  width: 70%;
+}
+.w-80{
+  width: 80%;
+}
+.w-90{
+  width: 90%;
+}
+.w-100{
+  width: 100%;
+}
